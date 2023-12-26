@@ -30,6 +30,17 @@ Training and Testing is combined in *main.py*. To run the model with default set
 
 When training, the weight would be saved in directory **weight/**.
 
+### Blink
+
+The directory **blink** contains files related to blinks.
+
+- *data_collect.py*: Collect EAR sequence and labels for training SVM prediction model.
+- *train_svm.py*: Train SVM predictor with collected data.
+- *test_svm.py*: Test the trained SVM predictor on other videos.
+- *blink_detect_threshold.py*: Traditional way of predicting blinks by setting thresholds.
+- *blink_detect_svm.py*: Use the trained SVM model to predict blinks.
+- *data_analysis.py*: Fit the blink intervals to a log-norm curve.
+
 ### Demo
 
 *demo.py* uses the trained model to output corresponding controller rig values for audio clips. The weight of model **PATH**,  path to audio files **audio_path** and save files **pred_path** need to be assigned inside the script. 
