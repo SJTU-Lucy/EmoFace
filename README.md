@@ -32,7 +32,7 @@ When training, the weight would be saved in directory **weight/**.
 
 ### Demo
 
-*demo.py* uses the trained model to output corresponding controller rig values for audio clips. The weight of model **PATH**,  path to audio files **audio_path** and save files **pred_path** need to be assigned inside the script.   
+*demo.py* uses the trained model to output corresponding controller rig values for audio clips. The weight of model **PATH**,  path to audio files **audio_path** and save files **pred_path** need to be assigned inside the script. 
 
 ### Visualization
 
