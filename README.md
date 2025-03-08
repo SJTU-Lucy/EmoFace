@@ -2,6 +2,9 @@
 
 PyTorch implementation for the paper **EmoFace: Audio-driven Emotional 3D Face Animation**.
 
+### Update: Release Pre-trained weight
+The pre-trained weight of **EmoFace** is now available at [Google Drive](https://drive.google.com/file/d/1PYIfppWAIVFuO2dWQgIuLrvSMkAYYTE5/view?usp=sharing) now! Download the weight and put under **weight** folder.
+
 ### Environment
 
 - Linux
