@@ -10,7 +10,7 @@ from data import FeaturesConstructor
 emotion_id = {"ang": 0, "dis": 1, "fea": 2, "hap": 3, "neu": 4, "sad": 5, "sur": 6}
 emo_dim = 7                                 # dimension of emotions
 out_dim = 174                               # dimension of output controller value
-PATH = "weights/1000_model.pth"             # path to saved .pth weight file
+PATH = "weights/1200_model.pth"             # path to saved .pth weight file
 valid_data = "/PATH_TO_DATASET/validation"
 audio_path = valid_data + "/WAV"            # path of audios to be predicted
 pred_path = valid_data + "/PRED_CTR"        # path to save predicted controller values
