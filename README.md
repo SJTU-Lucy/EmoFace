@@ -1,6 +1,6 @@
 # EmoFace: Audio-driven Emotional 3D Face Animation
 
-PyTorch implementation for the paper **EmoFace: Audio-driven Emotional 3D Face Animation**.
+This is the official repository for this paper: [Arxiv](https://arxiv.org/abs/2407.12501)
 
 ### Update: Release Pre-trained weight
 The pre-trained weight of **EmoFace** is now available at [Google Drive](https://drive.google.com/file/d/1PYIfppWAIVFuO2dWQgIuLrvSMkAYYTE5/view?usp=sharing) now! Download the weight and put under **weight** folder.
@@ -50,4 +50,32 @@ The directory **blink** contains files related to blinks.
 
 ### Visualization
 
-Output of the model is *.txt* files containing controller values, each row stands for one frame. To visualize the output, you need a MetaHuman model with all the controller rigs in the *valid_attr_names.txt*.
+The predicted expressions are formatted as 174-dimensional metahuman controller parameter sequences and are saved in a .txt file. The results can be visualized using either Maya or UE5. The scripts for visualization have been uploaded to **visualization** folder.
+
+**(1) MAYA**
+
+- Import your MetaHuman character from Quixel Bridge or somewhere else.
+- Set the camera in panel-orthographic to **front**.
+- Open *render.py* in Maya.
+- Modify the input and output settings from line 135 to 140.
+- If the output videos looks weird, adjusting camera settings from line 117 to 120.
+
+**(2) Unreal Engine 5**
+
+Unlike Maya, the output controller rig sequences cannot be directly be imported into UE5. So we use Maya as the import intermediary, exporting **.fbx** file by Maya, and then import it into UE5. The workflow is introduced by this video: [How to Rig and Animate a Metahuman: Maya to Unreal Engine 5 Workflow - YouTube](https://www.youtube.com/watch?v=OYjq4aRgKWg). As for setting key frames, *set_frames.py* can be used to set frame-wise controller values in Maya. 
+
+### Citation
+
+If you find our work helpful for your research, please cite our paper:
+
+```
+@inproceedings{liu2024emoface,
+  title={EmoFace: Audio-driven emotional 3D face animation},
+  author={Liu, Chang and Lin, Qunfen and Zeng, Zijiao and Pan, Ye},
+  booktitle={2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)},
+  pages={387--397},
+  year={2024},
+  organization={IEEE}
+}
+```
+

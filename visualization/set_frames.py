@@ -93,8 +93,8 @@ class CTRDataLoader:
 class AnimProcessor:
     def __init__(self):
         self._anim_fps = 60
-        self._input_path_pattern = "YOUR_RIG_FILE_PATH"
-        self._config_file_path = "valid_attr_names.txt"
+        self._input_path_pattern = "YOUR Controller Rig File Path"
+        self._config_file_path = "metahuman_attr_names.txt"
         self._data_loader = CTRDataLoader(self._config_file_path)
         cmds.currentUnit(time="%dfps" % self._anim_fps)
 

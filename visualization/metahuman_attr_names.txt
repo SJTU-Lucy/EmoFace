@@ -23,8 +23,8 @@ CTRL_C_tongue-translateY
 CTRL_C_tongue_inOut-translateY
 CTRL_C_tongue_narrowWide-translateY
 CTRL_C_tongue_press-translateY
-CTRL_C_tongue_roll-translateX
-CTRL_C_tongue_roll-translateY
+CTRL_C_tongue_tip-translateX
+CTRL_C_tongue_tip-translateY
 CTRL_C_tongue_tip-translateX
 CTRL_C_tongue_tip-translateY
 CTRL_L_brow_down-translateY
